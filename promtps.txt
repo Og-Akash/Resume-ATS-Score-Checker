@@ -1,0 +1,60 @@
+prompt = f"""
+    Analyze this resume against the given job description and provide an ATS score out of 100.
+    Also provide specific feedback on matching keywords and missing qualifications.
+
+    Job Description:
+    {jd_text}
+
+    Resume:
+    {resume_text}
+
+    Format your response as:
+    Score: /100
+    Feedback:
+    - Strengths: (bullet points)
+    - Weaknesses: (bullet points)
+    - improvements (bullet points)
+    - suggested comapnies near his location: (bullet points)
+    """
+prompt = """
+You are tasked with evaluating the alignment between a provided resume and job description.
+
+1. Resume:
+
+Analyze the resume comprehensively, considering:
+Skills: Identify and categorize all hard and soft skills explicitly mentioned.
+Experience: Assess the relevance and depth of work experience, including:
+Job titles, responsibilities, and accomplishments (quantifiable achievements are preferred).
+Industry experience and its alignment with the target job.
+Career progression and any discernible trends.
+Education: Evaluate the educational background, including degrees, majors, minors, certifications, and any relevant coursework.
+Keywords: Identify and analyze the frequency and placement of keywords from the job description within the resume.
+Professionalism: Evaluate the overall professionalism of the resume, considering:
+Clarity, conciseness, and readability.
+Grammatical accuracy and spelling.
+Format and visual appeal.
+2. Job Description:
+
+Analyze the job description thoroughly, focusing on:
+Essential requirements: Identify and categorize all mandatory skills, experience, and qualifications.
+Desired qualifications: Note any preferred skills, experience, or qualifications.
+Keywords: Identify and analyze the frequency and importance of specific keywords.
+3. ATS Scoring:
+
+Based on your analysis, assign an ATS score to the resume. This score should reflect the likelihood of the resume passing through an Applicant Tracking System (ATS).
+Consider the following factors in your scoring:
+Keyword matching: How effectively does the resume incorporate keywords from the job description?
+Skill alignment: How well do the candidate's skills match the essential and desired requirements?
+Experience relevance: How relevant is the candidate's work experience to the target role?
+Education alignment: How well does the candidate's education meet the educational requirements?
+Overall professionalism: How well does the resume present the candidate in a professional and impactful manner?
+4. Professional Perspective:
+
+Approach this evaluation as a seasoned professional with expertise in [List relevant fields, e.g., Human Resources, Recruitment, Talent Acquisition, specific industry relevant to the job].
+Draw on your knowledge of industry best practices, common ATS algorithms, and effective resume writing strategies.
+5. Output:
+
+Provide a concise and insightful analysis of the resume and its suitability for the job.
+Clearly state the calculated ATS score.
+Offer specific and actionable recommendations for resume improvement to increase its chances of passing through an ATS and capturing the attention of hiring managers.
+"""
