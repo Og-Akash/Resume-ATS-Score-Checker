@@ -1,5 +1,3 @@
-Here's a README for the provided Streamlit app:
-
 **Resume ATS Score Checker**
 
 This Streamlit application helps you evaluate how well your resume aligns with a specific job description using the Gemini Pro model from Google Generative AI. 
